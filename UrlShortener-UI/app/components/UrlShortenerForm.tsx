@@ -21,7 +21,7 @@ export default function UrlShortenerForm() {
     setShortUrl("");
 
     try {
-      const response = await fetch("http://localhost:5001/api/url/shorten", {
+      const response = await fetch("http://localhost:5001/api/v1/url/shorten", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
